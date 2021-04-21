@@ -4,14 +4,11 @@ import { NavLink, Switch, Route } from "react-router-dom";
 import Contact from "./Components/Contact";
 import About from "./Components/About";
 import Users from "./Components/Users";
-import logo from "./picts/apple-touch-icon.png";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-
         <NavLink className="navi" to="/">
           Home
         </NavLink>
@@ -44,5 +41,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
