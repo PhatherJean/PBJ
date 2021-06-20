@@ -1,9 +1,9 @@
 import "./App.css";
 import MainPage from "./Components/MainPage";
-import { NavLink, Switch, Route } from "react-router-dom";
-import Contact from "./Components/Contact";
-import About from "./Components/About";
-import Users from "./Components/Users";
+import { Switch, Route } from "react-router-dom";
+// import Contact from "./Components/Contact";
+// import About from "./Components/About";
+// import Users from "./Components/Users";
 import Footer from "./Components/Footer";
 function App() {
   return (
