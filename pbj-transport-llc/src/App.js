@@ -9,10 +9,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <NavLink className="navi" to="/">
+        {/* <NavLink className="navi" to="/">
           Home
-        </NavLink>
-        <NavLink className="navi" to="/about">
+        </NavLink> */}
+        {/* <NavLink className="navi" to="/about">
           About Us
         </NavLink>
         <NavLink className="navi" to="/contacts">
@@ -20,11 +20,11 @@ function App() {
         </NavLink>
         <NavLink className="navi" to="/users">
           Users
-        </NavLink>
+        </NavLink> */}
       </header>
       <div>
         <Switch>
-          <Route path="/users">
+          {/* <Route path="/users">
             <Users />
           </Route>
           <Route path="/contacts">
@@ -32,7 +32,7 @@ function App() {
           </Route>
           <Route path="/about">
             <About />
-          </Route>
+          </Route> */}
           <Route path="/">
             <MainPage />
           </Route>
