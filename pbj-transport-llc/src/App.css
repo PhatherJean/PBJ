@@ -21,7 +21,7 @@ div.backgroundLogo {
   background-size: cover;
   background-color: #fff;
   background-position: top;
-  background-attachment: local;
+  background-attachment: fixed;
   background-image: url("./picts/IMG_0810.PNG");
 }
 
