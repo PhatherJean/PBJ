@@ -37,24 +37,12 @@ div.backgroundLogo {
   color: #61dafb;
 }
 
-.homepage {
-  width: 50%;
-  margin: 0 auto;
-}
-
 .navi {
   text-decoration: none;
   margin: 2%;
   max-width: 20%;
   color: blue;
   text-shadow: red 1px 1px;
-}
-
-header {
-  max-width: 95%;
-  margin: 2% auto;
-  opacity: 80%;
-  display: flex;
 }
 
 .bio {
