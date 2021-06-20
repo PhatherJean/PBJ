@@ -4,7 +4,7 @@ import { NavLink, Switch, Route } from "react-router-dom";
 import Contact from "./Components/Contact";
 import About from "./Components/About";
 import Users from "./Components/Users";
-
+import Footer from "./Components/Footer";
 function App() {
   return (
     <div className="App">
@@ -38,6 +38,7 @@ function App() {
           </Route>
         </Switch>
       </div>
+      <Footer />
     </div>
   );
 }
