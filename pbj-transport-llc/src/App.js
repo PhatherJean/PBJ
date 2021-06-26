@@ -1,6 +1,7 @@
 import "./App.css";
+import logo from "./picts/logo.PNG";
 import MainPage from "./Components/MainPage";
-import { Switch, Route } from "react-router-dom";
+import { NavLink, Switch, Route } from "react-router-dom";
 // import Contact from "./Components/Contact";
 // import About from "./Components/About";
 // import Users from "./Components/Users";
@@ -9,18 +10,23 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {/* <NavLink className="navi" to="/">
+        <img
+          className="logo"
+          src={logo}
+          alt="robson-hatsukami-morgan-NKr0qBAkU4s-unsplash"
+        />
+        <NavLink className="navi" to="/">
           Home
-        </NavLink> */}
-        {/* <NavLink className="navi" to="/about">
+        </NavLink>
+        <NavLink className="navi" to="#">
           About Us
         </NavLink>
-        <NavLink className="navi" to="/contacts">
+        <NavLink className="navi" to="#">
           Contacts
         </NavLink>
-        <NavLink className="navi" to="/users">
+        <NavLink className="navi" to="#">
           Users
-        </NavLink> */}
+        </NavLink>
       </header>
       <div>
         <Switch>
