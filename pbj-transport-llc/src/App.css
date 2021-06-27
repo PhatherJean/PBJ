@@ -1,3 +1,9 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
   background-color: cornsilk;
@@ -8,19 +14,19 @@
   pointer-events: none;
   border-radius: 50%;
 }
-.logo:hover {
-  transform: rotate(360deg);
-  border: green 2px dashed;
-}
 
-div.backgroundLogo {
+.backgroundLogo {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  justify-content: center;
+  font-size: 1.5rem;
   height: 100vh;
-  max-width: 90%;
+  max-width: 95%;
   margin: 0 auto;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
-  background-attachment: scroll;
   background-image: url("./picts/greyTruck.jpg");
 }
 
@@ -31,6 +37,11 @@ div.backgroundLogo {
   padding: 1%;
   justify-content: space-around;
   font-size: calc(12px + 3vmin);
+}
+
+.type {
+  margin: 0 auto;
+  padding: 2%;
 }
 
 .navi {
@@ -49,15 +60,37 @@ div.backgroundLogo {
 
 .bio {
   display: flex;
-  background-color: aliceblue;
-  max-width: 90%;
+  justify-content: space-evenly;
+  align-items: center;
   margin: 0 auto;
+  border: red 2px solid;
 }
 
-.bio-info {
+.smallGuy {
+  background-image: url("./picts/smallguy.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  width: 100%;
+  border: blue 1px solid;
+}
+
+.time {
+  background-image: url("./picts/clock.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 80vh;
+  width: 100%;
+  border: green 1px solid;
+}
+
+.time-info {
   padding: 5%;
   justify-content: space-around;
   text-align: center;
+  border: green 1px solid;
 }
 
 .bio p {
@@ -79,22 +112,18 @@ div.backgroundLogo {
 .footer {
   background-color: black;
   color: #2f4f4f;
-  padding: 1%;
   margin: 2%;
   display: flex;
-  flex-direction: column-reverse;
   justify-content: space-evenly;
   align-items: center;
 }
 
 .foot-logo {
-  margin: 0 auto;
+  position: relative;
 }
 
 .contact-info {
   text-align: center;
-  margin: 0 auto;
-  width: 85%;
 }
 
 @media only screen and (max-width: 800px) {
