@@ -10,8 +10,7 @@ export default function Footer() {
       <div className="contact-info">
         <h4>Contact</h4>
         <p>
-          3709 NW 79th Ave <br />
-          Suite 245 #2611 <br />
+          3709 NW 79th Ave Suite 245 #2611 <br />
           Miami, Florida 33166
         </p>
         <a
@@ -26,7 +25,7 @@ export default function Footer() {
           href="email:pbj@pbjtransoort.org"
           style={{ textDecoration: "none", color: "#2f4f4f" }}
         >
-          {" "}
+          {"    "}
           Email Us
         </a>
         <footer>
