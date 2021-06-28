@@ -60,53 +60,72 @@ body {
 
 .bio {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   margin: 0 auto;
   border: red 2px solid;
+  width: 95%;
 }
 
 .smallGuy {
   background-image: url("./picts/smallguy.jpg");
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 80vh;
+  background-position: center;
+  height: 120vh;
   width: 100%;
-  border: blue 1px solid;
+  margin: 0 auto;
 }
 
 .time {
   background-image: url("./picts/clock.jpg");
-  background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 95%;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+.world {
+  background-image: url("./picts/USA.jpg");
+  background-repeat: no-repeat;
+  justify-content: center;
   background-size: contain;
-  height: 80vh;
-  width: 100%;
-  border: green 1px solid;
+  height: 125vh;
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 25px;
 }
 
-.time-info {
-  padding: 5%;
-  justify-content: space-around;
+.subtitle {
+  color: blue;
+  text-shadow: red 1px 1px;
+  font-size: 2em;
+  background-color: cornsilk;
+  width: 50%;
+  margin: 25px auto;
+}
+
+.info {
+  line-height: 1.5;
+  opacity: 0.2;
   text-align: center;
-  border: green 1px solid;
-}
-
-.bio p {
+  border: green 3px solid;
   justify-content: center;
   align-items: center;
   text-align: center;
   padding: 1%;
   margin: 0 auto;
-  width: 40%;
-  color: #2f4f4f;
+  width: 60%;
+  color: #fff;
 }
 
-.bio img {
-  width: 35%;
-  height: 20vh;
-  padding: 3%;
+.info:hover {
+  opacity: 1;
+  background-color: cornsilk;
+  color: #2f4f4f;
 }
 
 .footer {
