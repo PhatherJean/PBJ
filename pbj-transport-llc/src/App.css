@@ -64,7 +64,6 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  border: red 2px solid;
   width: 95%;
 }
 
@@ -101,7 +100,7 @@ body {
 
 .subtitle {
   color: blue;
-  text-shadow: red 1px 1px;
+  text-shadow: red 1.5px 1.5px;
   font-size: 2em;
   background-color: cornsilk;
   width: 50%;
@@ -126,6 +125,31 @@ body {
   opacity: 1;
   background-color: cornsilk;
   color: #2f4f4f;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: right;
+  border: black solid 2px;
+  background-color: #f0f8ff;
+  width: 60%;
+  margin: 2% auto;
+  padding: 25px;
+}
+label {
+  display: flex;
+  padding: 1.5em;
+  justify-content: space-between;
+  text-align: start;
+  width: 40%;
+  margin: 0 auto;
+}
+
+#submit {
+  margin: 0 auto;
+  padding: 5px;
 }
 
 .footer {
