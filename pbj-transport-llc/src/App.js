@@ -2,9 +2,8 @@ import "./App.css";
 import logo from "./picts/logo.PNG";
 import MainPage from "./Components/MainPage";
 import { NavLink, Switch, Route } from "react-router-dom";
-// import Contact from "./Components/Contact";
-// import About from "./Components/About";
-// import Users from "./Components/Users";
+import Contact from "./Components/Contact";
+import Users from "./Components/Users";
 import Footer from "./Components/Footer";
 function App() {
   return (
@@ -18,11 +17,8 @@ function App() {
         <NavLink className="navi" to="/">
           Home
         </NavLink>
-        <NavLink className="navi" to="#">
-          About Us
-        </NavLink>
-        <NavLink className="navi" to="#">
-          Contacts
+        <NavLink className="navi" to="/contact">
+          Contact
         </NavLink>
         <NavLink className="navi" to="#">
           Users
@@ -30,15 +26,12 @@ function App() {
       </header>
       <div>
         <Switch>
-          {/* <Route path="/users">
+          <Route path="/users">
             <Users />
           </Route>
-          <Route path="/contacts">
+          <Route path="/contact">
             <Contact />
           </Route>
-          <Route path="/about">
-            <About />
-          </Route> */}
           <Route path="/">
             <MainPage />
           </Route>
