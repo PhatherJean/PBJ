@@ -1,21 +1,29 @@
 import React from "react";
 import emailjs from "emailjs-com";
+import { useHistory } from "react-router-dom";
 
 export default function Contact() {
+  const history = useHistory();
   function email(e) {
     e.preventDefault(e);
 
     emailjs
-      .sendForm("gmail", "pbj-first", e.target, "user_XeT4mWFWu8frrLgB7fxaF")
+      .sendForm(
+        "service_syltcqt",
+        "template_1pa41z9",
+        e.target,
+        "user_XeT4mWFWu8frrLgB7fxaF"
+      )
       .then(
         (result) => {
           console.log(result.text);
+          history.push("/thanks");
         },
         (error) => {
           console.log(error.text);
         }
       );
-    e.reset();
+    e.target.reset();
   }
   return (
     <div>

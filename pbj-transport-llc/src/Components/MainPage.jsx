@@ -20,6 +20,7 @@ export default function MainPage(props) {
                   ],
                   autoStart: true,
                   loop: true,
+                  cursor: " ",
                 }}
               />
             </h2>
